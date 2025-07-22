@@ -11,7 +11,6 @@ Este paquete reúne clases en Python para el control de instrumentos físicos de
 Este paquete incluye, actualmente, controladores para los siguientes instrumentos:
 
 - **Agilent 34970A** — Multiplexor
-- **Tektronix AFG3021B** — Generador de funciones
 - **Tektronix TDS1002B** — Osciloscopio digital
 
 Cada clase permite interactuar con el equipo correspondiente mediante comandos SCPI a través de la librería [PyVISA](https://pyvisa.readthedocs.io/).

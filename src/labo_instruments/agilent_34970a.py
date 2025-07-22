@@ -5,7 +5,7 @@ Manual P (pdf): https://github.com/diegoshalom/labosdf/blob/master/manuales/Agil
 Manual P (chm original): https://github.com/diegoshalom/labosdf/blob/master/manuales/Agilent34970a%20command%20reference.chm
 """
 
-import visa
+import pyvisa
 import numpy as np
 import datetime
 
@@ -30,7 +30,7 @@ class Agilent34970A:
         self.channelDelay = channelDelay
         self.channelsList = channelsList
         self.nChannels = len(self.channelsList)
-        self._mux = visa.ResourceManager().open_resource(name)
+        self._mux = pyvisa.ResourceManager().open_resource(name)
         print(self._mux.query("*IDN?"))
         self.config(scanInterval =scanInterval, 
                  channelDelay = channelDelay,

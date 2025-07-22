@@ -6,7 +6,7 @@ Manual P (web): https://github.com/diegoshalom/labosdf/blob/master/manuales/TDS1
 
 from matplotlib import pyplot as plt
 import numpy as np
-import visa
+import pyvisa
 
 class TDS1002B:
     """Clase para el manejo osciloscopio TDS2000 usando PyVISA de interfaz"""
@@ -21,7 +21,7 @@ class TDS1002B:
         Raises:
             VISAIOError: Si no se puede establecer la conexión con el equipo.
         """
-        self._osci = visa.ResourceManager().open_resource(name)
+        self._osci = pyvisa.ResourceManager().open_resource(name)
         print(self._osci.query("*IDN?"))
 
     	#Configuración de curva
