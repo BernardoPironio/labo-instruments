@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "labo-instruments"
+version = "0.1.0"
+description = "Control de instrumentos de laboratorio con PyVISA"
+authors = [{name = "Bernardo Pironio", email = "bpironio@gmail.com"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.8"
+dependencies = ["numpy", "matplotlib", "pyvisa","pandas"]
+
+[project.urls]
+Homepage = "https://github.com/BernardoPironio/labo_instruments"
+
+[tool.setuptools.packages.find]
+where = ["src"]

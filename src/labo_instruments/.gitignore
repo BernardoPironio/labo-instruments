@@ -1,0 +1,31 @@
+# Archivos Python compilados
+__pycache__/
+*.py[cod]
+*.so
+
+# Carpeta de construcción del paquete
+build/
+dist/
+*.egg-info/
+
+# Entornos virtuales
+.venv/
+env/
+venv/
+
+# Archivos del sistema / editores
+.DS_Store
+*.swp
+*.swo
+*.bak
+*.log
+.ipynb_checkpoints/
+
+# Archivos temporales de pruebas
+*.tmp
+*.temp
+*.out
+
+# IDEs
+.vscode/
+.idea/
