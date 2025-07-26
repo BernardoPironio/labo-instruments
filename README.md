@@ -13,6 +13,8 @@ Este paquete incluye, actualmente, controladores para los siguientes instrumento
 - **Agilent 34970A** — Multiplexor Agilent 34970A
 - **Tektronix TDS1002B** — Osciloscopio Tektronix TDS1002B
 - **SR830** — LOCKIN Stanford Research SR830
+- **Tektronix AFG3021** — Generador de funciones Tektronix AFG 3021B
+
 
 Cada clase permite interactuar con el equipo correspondiente mediante comandos SCPI a través de la librería [PyVISA](https://pyvisa.readthedocs.io/).
 
@@ -26,7 +28,5 @@ Las versiones originales de estos scripts fueron desarrolladas por docentes del 
 
 ## 🚀 Instalación
 
-Una vez subido a PyPI:
-
-```bash
-pip install labo-instruments
+Para instalar la libreria introducir en la consola 
+pip install git+https://github.com/BernardoPironio/labo-instruments.git
