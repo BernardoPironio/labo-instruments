@@ -1,6 +1,7 @@
 from .tektronix_tds1002b import TDS1002B
 from .agilent_34970a import Agilent34970A
 from .sr830 import SR830
+from .tektronix_afg3021b import AFG3021B
 
 import inspect
 
@@ -22,6 +23,7 @@ def resumen():
         "Osciloscopio Tektronix TDS1002B": TDS1002B,
         "Multiplexor Agilent 34970A": Agilent34970A,
         "LOCKIN Stanford Research SR830": SR830,
+        "Generador de funciones Tektronix AFG 3021B": AFG3021B, 
     }
     
     for nombre, clase in clases.items():

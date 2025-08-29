@@ -94,7 +94,8 @@ class SR830:
         Raises:
             ValueError: Si auxV está fuera del rango permitido.
         """
-        self._lockin.write('AUXV {0}, {1}'.format(auxOut, auxV))
+        self._lockin.write(f'AUXV {auxOut}, {auxV}')
+
            
     def set_referencia(self,isIntern, freq, voltaje = 1):
         """
