@@ -1,7 +1,8 @@
 from .tektronix_tds1002b import TDS1002B
-from .agilent_34970a import Agilent34970A
+from .agilent_34970a import AGILENT34970A
 from .sr830 import SR830
 from .tektronix_afg3021b import AFG3021B
+from .kurios import KURIOS
 
 import inspect
 
@@ -21,9 +22,10 @@ def resumen():
     
     clases = {
         "Osciloscopio Tektronix TDS1002B": TDS1002B,
-        "Multiplexor Agilent 34970A": Agilent34970A,
+        "Multiplexor Agilent 34970A": AGILENT34970A,
         "LOCKIN Stanford Research SR830": SR830,
         "Generador de funciones Tektronix AFG 3021B": AFG3021B, 
+        "Kurios® Liquid Crystal Tunable Filter Controller": KURIOS,
     }
     
     for nombre, clase in clases.items():

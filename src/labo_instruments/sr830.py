@@ -34,6 +34,7 @@ class SR830:
         #print(self._lockin.query('*IDN?')) # habria que ver si es mejor no pedir IDN. Puede que trabe la comunicacion al ppio
         self._lockin.write("LOCL 2") #Bloquea el uso de teclas del Lockin
         time.sleep(1) # tal vez ayuda a evitar errores de comunicacion del pyvisa
+        print(self._lockin.query("*IDN?"))
         self.scale = self.get_scale()
         self.time_constant = self.get_time_constant()
 

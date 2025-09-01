@@ -9,7 +9,7 @@ import pyvisa
 import numpy as np
 import datetime
 
-class Agilent34970A:
+class AGILENT34970A:
     """Clase para el manejo multiplexor Agilent34970A usando PyVISA de interfaz"""
 
     def __init__(self, name, 
