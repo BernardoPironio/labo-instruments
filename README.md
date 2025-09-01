@@ -14,6 +14,7 @@ Este paquete incluye, actualmente, controladores para los siguientes instrumento
 - **Tektronix TDS1002B** — Osciloscopio Tektronix TDS1002B
 - **SR830** — LOCKIN Stanford Research SR830
 - **Tektronix AFG3021** — Generador de funciones Tektronix AFG 3021B
+- **Kurios** — Kurios® Liquid Crystal Tunable Filter Controller (Thorlabs)
 
 
 Cada clase permite interactuar con el equipo correspondiente mediante comandos SCPI a través de la librería [PyVISA](https://pyvisa.readthedocs.io/).
