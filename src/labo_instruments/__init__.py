@@ -6,6 +6,14 @@ from .kurios import KURIOS
 
 import inspect
 
+clases = {
+        "Osciloscopio Tektronix TDS1002B": TDS1002B,
+        "Multiplexor Agilent 34970A": AGILENT34970A,
+        "LOCKIN Stanford Research SR830": SR830,
+        "Generador de funciones Tektronix AFG 3021B": AFG3021B, 
+        "Kurios® Liquid Crystal Tunable Filter Controller": KURIOS,
+        }
+
 def listar_metodos_con_info(clase):
     metodos = []
     for nombre, miembro in inspect.getmembers(clase):
@@ -19,14 +27,6 @@ def listar_metodos_con_info(clase):
 def resumen():
     print("🧪 Paquete labo-instruments cargado.")
     print("Clases disponibles, métodos y descripción breve:\n")
-    
-    clases = {
-        "Osciloscopio Tektronix TDS1002B": TDS1002B,
-        "Multiplexor Agilent 34970A": AGILENT34970A,
-        "LOCKIN Stanford Research SR830": SR830,
-        "Generador de funciones Tektronix AFG 3021B": AFG3021B, 
-        "Kurios® Liquid Crystal Tunable Filter Controller": KURIOS,
-    }
     
     for nombre, clase in clases.items():
         print(f"📦 {nombre}")
