@@ -1,6 +1,6 @@
 """
 Kurios® Liquid Crystal Tunable Filter Controller (Thorlabs)
-Manual: https://www.thorlabs.com/drawings/8095359c44da9912-173C283D-AAD0-DEC6-FD47CF7D75DF0BED/KURIOS2-Manual.pdf
+Manual: 'https://www.thorlabs.com/drawings/8095359c44da9912-173C283D-AAD0-DEC6-FD47CF7D75DF0BED/KURIOS2-Manual.pdf'
 """
 
 import time
@@ -60,3 +60,14 @@ class KURIOS:
         - (str): Temperatura actual en grados Celsius.
         """
         return self._fotocromador.query(f'TP?')
+
+    def get_frecuancia(self):
+        """
+        Consulta la frecuencia asociada a la longitud de onda elegida.
+
+        Retorna:
+        - (float): Frecuencia f en Hz.
+        """
+        wl = self._fotocromador.query(f'WL?')
+        f = 3e8 /wl
+        return f
