@@ -2,7 +2,7 @@ from .tektronix_tds1002b import TDS1002B
 from .agilent_34970a import AGILENT34970A
 from .sr830 import SR830
 from .tektronix_afg3021b import AFG3021B
-from .kurios import KURIOS
+# from .kurios import KURIOS
 
 import inspect
 
@@ -11,7 +11,7 @@ clases = {
         "Multiplexor Agilent 34970A": AGILENT34970A,
         "LOCKIN Stanford Research SR830": SR830,
         "Generador de funciones Tektronix AFG 3021B": AFG3021B, 
-        "Kurios® Liquid Crystal Tunable Filter Controller": KURIOS,
+        # "Kurios® Liquid Crystal Tunable Filter Controller": KURIOS,
         }
 
 def listar_metodos_con_info(clase):
